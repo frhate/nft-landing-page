@@ -1,0 +1,148 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  #cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(246, 250, 222);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-out;
+  }
+  
+  #cursor:hover {
+    transform: scale(1.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 2% 10%;
+    z-index: 999;
+  }
+  
+  .navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 650;
+    font-size: 1.2em;
+    transition: 0.3s;
+    transform: scaleX(0.9);
+  }
+  
+  .navigation a:hover {
+    color: #f8f8f8;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 20px rgb(238, 226, 59);
+  }
+  
+  section {
+    padding: 10% 20%;
+  }
+  
+  .main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(pic/1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .main h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 10% 5%;
+  }
+  
+  .main p {
+    text-align: center;
+    color: #ffffff;
+    margin: 5% 5%;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  
+  .main-btn {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 2% 5%;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin: 5% auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .main-btn:hover {
+    background-color: rgb(211, 212, 112);
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0px 0px 20px rgb(238, 226, 59);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    nav {
+      padding: 5% 10%;
+    }
+    section {
+      padding: 20% 10%;
+    }
+    .main h1 {
+      font-size: 2em;
+      margin: 20% 5%;
+    }
+    .main p {
+      font-size: 0.9em;
+      margin: 10% 5
+    }}  
+    /* Styles for all screen sizes */
+body {
+  font-size: 16px;
+}
+
+
+
+/* Styles for screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  nav {
+      padding: 5px 50px;
+  }
+
+  section {
+      padding: 80px 150px;
+  }
+
+  .main h1 {
+      margin-left:
